@@ -1,0 +1,7 @@
+<h1>WHOOO let THE DOGS OUTTT!</h1>
+
+<ul>
+  <% @dogs.each do |dog| %>
+    <li><%= link_to dog.name, dog %> Votes: <%= dog.employees.count %> </li>
+  <% end %>
+</ul>

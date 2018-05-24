@@ -1,0 +1,15 @@
+<h1> Bark! I am Mister <%= @dog.name %> </h1>
+<h3> <%= @dog.age %> </h3>
+<h3> <%= @dog.breed %> </h3>
+
+<% if @dog.employees.length > 0 %>
+<h4><em> These are the b!tches who find me admirable: </em></h4>
+<ul>
+<% @dog.employees.each do |employee| %>
+<li> <%= link_to employee.full_name, employee %> </li>
+<% end %>
+</ul>
+<% end %>
+
+<%= link_to "All Employees", employees_path %><br>
+<%= link_to "All Dogs", dogs_path %>

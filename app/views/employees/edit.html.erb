@@ -1,0 +1,8 @@
+<h1>Edit this employee:</h1>
+
+<%= render "form" %>
+<%= form_tag employee_path(@employee), method: :delete do %>
+<%= submit_tag "YOU ARE FIRED" %>
+<% end %>
+
+<%= link_to "Cancel", @employee %>
